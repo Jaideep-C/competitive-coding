@@ -3,7 +3,6 @@ using namespace std;
 
 // MACROS
 #define int 			long long
-#define pb(x) 			push_back(x)
 #define MAX(x, y) 		(((x) > (y)) ? (x) : (y))
 #define MIN(x, y) 		(((x) < (y)) ? (x) : (y))
 #define mod(x) 			(((x) >= 0) ? (x) : (-x))
