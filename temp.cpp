@@ -15,7 +15,13 @@ using namespace std;
 #define tr(c,i) 		for(__typeof__((c)).begin() i = (c).begin(); i != (c).end(); i++)
 #define cpresent(c,x) 		(find(all(c),x) != (c).end())
 #define pb(a)			push_back(a)
+#define pf(a)			push_front(a)
 #define mp(a,b)			make_pair(a,b)
+// Kind of Macros
+using vi=vector<int>;
+using vvi=vector<vector<int>>;
+using vb=vector<bool>;
+using vp=vector<pair<int,int>>;
 // TEMP_FUNCTION`S
 template<typename... T>
 void read(T&... args) {
@@ -35,16 +41,17 @@ int gcd(int a, int b);
  * CodeStarts here
  * 
  */
-const int mod = 1'000'000'007; 
+const int mod = 1'000'000'007;
+const bool isTestCase=true;
 void solve(){
 
 }
 
-int32_t main()
-{
+int32_t main() {
 	FAST;
 	int t = 1;
-	cin >> t;
+	if(isTestCase)
+		cin >> t;
 	
 	__testCase(t);
 	
@@ -62,14 +69,13 @@ int mpow(int base, int exp) {
 	return result;
 }
 
-int gcd(int a, int b)
-{
+int gcd(int a, int b) {
     if (a == 0)
         return b;
     return gcd(b % a, a);
 }
 
-void __clock(){
+void __clock() {
 	#ifdef ONPC
 		cout << "__________________________";
 		cerr << endl
@@ -77,7 +83,7 @@ void __clock(){
 	#endif
 }
 
-void __testCase(int t){
+void __testCase(int t) {
 	#ifdef ONPC
 		cout << "__________________________\n";
 	#endif
