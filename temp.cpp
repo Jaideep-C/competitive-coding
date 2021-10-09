@@ -3,36 +3,35 @@ using namespace std;
 
 // MACROS
 #define int 			long long
+#define FAST        	ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define FILE        	freopen("inp.txt", "r", stdin);freopen("out.txt", "w", stdout)
+#define inf 			LLONG_MAX;
+#define F 				first
+#define S 				second
 #define MAX(x, y) 		(((x) > (y)) ? (x) : (y))
 #define MIN(x, y) 		(((x) < (y)) ? (x) : (y))
 #define mod(x) 			(((x) >= 0) ? (x) : (-x))
 #define deb(x)			cout<< #x <<" "<< x <<"\n";
-#define FAST        		ios_base::sync_with_stdio(false);cin.tie(NULL)
-#define FILE        		freopen("inp.txt", "r", stdin);freopen("out.txt", "w", stdout)
-#define inf 			LLONG_MAX;
 #define all(x) 			(x).begin(), (x).end() 
 #define rall(x) 		(x).rbegin, (x).rend()
 #define tr(c,i) 		for(__typeof__((c)).begin() i = (c).begin(); i != (c).end(); i++)
-#define cpresent(c,x) 		(find(all(c),x) != (c).end())
+#define cpresent(c,x) 	(find(all(c),x) != (c).end())
 #define pb(a)			push_back(a)
 #define pf(a)			push_front(a)
 #define mp(a,b)			make_pair(a,b)
+
 // Kind of Macros
-using vi=vector<int>;
-using vvi=vector<vector<int>>;
-using vb=vector<bool>;
-using vp=vector<pair<int,int>>;
+typedef vector<int>	 			vi;
+typedef vector<vector<int>> 	vvi;
+typedef vector<bool>			vb;
+typedef vector<pair<int,int>>	vp;
+typedef set<int>				si;
+
 // TEMP_FUNCTION`S
 template<typename... T>
-void read(T&... args) {
-	((cin >> args), ...);
-}
-
+void read(T&... args);
 template<typename... T>
-void write(T&&... args) { 
-	((cout << args << " "), ...);
-	cout<<"\n";
-}
+void write(T&&... args);
 void __testCase(int t);
 int mpow(int base, int exp);
 int gcd(int a, int b);
@@ -44,7 +43,8 @@ int gcd(int a, int b);
 const int mod = 1'000'000'007;
 const bool isTestCase=true;
 void solve(){
-
+    int a,b;read(a,b);
+    write(a+b);
 }
 
 int32_t main() {
@@ -73,6 +73,17 @@ int gcd(int a, int b) {
     if (a == 0)
         return b;
     return gcd(b % a, a);
+}
+
+template<typename... T>
+void read(T&... args) {
+	((cin >> args), ...);
+}
+
+template<typename... T>
+void write(T&&... args) { 
+	((cout << args << " "), ...);
+	cout<<"\n";
 }
 
 void __clock() {
