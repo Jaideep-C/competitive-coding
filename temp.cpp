@@ -43,8 +43,7 @@ int gcd(int a, int b);
 const int mod = 1'000'000'007;
 const bool isTestCase=true;
 void solve(){
-    int a,b;read(a,b);
-    write(a+b);
+
 }
 
 int32_t main() {
