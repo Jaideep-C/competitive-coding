@@ -2,30 +2,29 @@
 using namespace std;
 
 // MACROS
-#define int 			long long
-#define FAST        	ios_base::sync_with_stdio(false);cin.tie(NULL)
-#define FILE        	freopen("inp.txt", "r", stdin);freopen("out.txt", "w", stdout)
-#define inf 			LLONG_MAX;
-#define F 				first
-#define S 				second
-#define MAX(x, y) 		(((x) > (y)) ? (x) : (y))
-#define MIN(x, y) 		(((x) < (y)) ? (x) : (y))
-#define mod(x) 			(((x) >= 0) ? (x) : (-x))
-#define deb(x)			cout<< #x <<" "<< x <<"\n";
-#define all(x) 			(x).begin(), (x).end() 
-#define rall(x) 		(x).rbegin, (x).rend()
-#define tr(c,i) 		for(__typeof__((c)).begin() i = (c).begin(); i != (c).end(); i++)
-#define cpresent(c,x) 	(find(all(c),x) != (c).end())
-#define pb(a)			push_back(a)
-#define pf(a)			push_front(a)
-#define mp(a,b)			make_pair(a,b)
-
-// Kind of Macros
-typedef vector<int>	 			vi;
-typedef vector<vector<int>> 	vvi;
-typedef vector<bool>			vb;
-typedef vector<pair<int,int>>	vp;
-typedef set<int>				si;
+#define int                         long long
+#define FAST                        ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define FILE                        freopen("inp.txt", "r", stdin);freopen("out.txt", "w", stdout);freopen("err.txt","w",stderr)
+#define inf                         LONG_MAX
+#define F                           first
+#define S                           second
+#define deb(x)                      cout<< #x <<" "<< x <<"\n";
+#define all(x)                      (x).begin(), (x).end()
+#define rall(x)                     (x).rbegin, (x).rend()
+#define tr(c,i)                     for(__typeof__((c)).begin() i = (c).begin(); i != (c).end(); i++)
+#define cpresent(c,x)               (find(all(c),x) != (c).end())
+#define pb(a)                       push_back(a)
+#define pf(a)                       push_front(a)
+#define mp(a,b)                     make_pair(a,b)
+#define endl                        '\n'
+// Kind of Macros                   
+typedef vector<int>                 vi;
+typedef vector<vector<int>>         vvi;
+typedef vector<bool>                vb;
+typedef vector<string>              vs;
+typedef vector<pair<int,int>>       vp;
+typedef set<int>                    si;
+typedef map<int,int>                mii;
 
 // TEMP_FUNCTION`S
 template<typename... T>
