@@ -1,4 +1,4 @@
-# competitiveCoding
+# Competitive Coding
 
 Soft build cmd: `g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -O2 -Wno-unused-result -DONPC` 
 
